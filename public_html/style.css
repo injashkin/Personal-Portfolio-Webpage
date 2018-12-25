@@ -3,3 +3,95 @@
     Author     : Игорь
 */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 1em/1.4 Helvetica, sans-serif;
+    min-width: 240px;
+    border: #000000 solid 1px;    
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;    
+    background-color: #aaaaaa;
+    height: 4em;
+    align-items: center;
+    border: #000000 solid 1px;
+}
+
+#logo {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: serif;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #000000;
+    text-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #000000;
+    border: #000000 solid 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 1em;
+    border: #000000 solid 1px;
+}
+
+nav ul li {
+    margin: 1em;
+}
+
+nav ul li a {  
+    text-decoration: none;
+    color: #000000;
+
+}
+
+main {
+    margin-top: 5em;
+    border: #000000 solid 1px;
+}
+
+.project-tile {
+
+}
+
+.project-img {
+
+}
+
+
+
+@media (max-width: 643px) {
+    #header {
+        position: static;
+        flex-direction: column;
+        height: 8em;
+    }
+
+    nav ul {        
+        margin-right: 0;
+    }
+
+    main {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 324px) {    
+
+    nav ul {
+        flex-direction: column;
+    }   
+
+    nav ul li {
+        margin: 0;
+    }
+}
