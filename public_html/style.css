@@ -10,18 +10,12 @@
 
 body {
     font: 1em/1.4 Helvetica, sans-serif;
-    min-width: 240px;
-    border: #000000 solid 1px;    
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
+    min-width: 240px;    
+    text-align: center;    
 }
 
 a:hover {
-    background: #999999;
+    background: #aaaaaa;
     color: #ffffff;
 }
 
@@ -47,8 +41,7 @@ h2 {
     justify-content: space-between; 
     align-items: center;
     background-color: #aaaaaa;
-    height: 4em;
-    border: #000000 solid 1px;
+    height: 4em;    
 }
 
 #logo {
@@ -58,19 +51,22 @@ h2 {
     font-size: 2.5em;
     text-decoration: none;
     color: #000000;
-    text-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #000000;
-    border: #000000 solid 1px;
+    text-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #000000;    
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    margin-right: 1em;
-    border: #000000 solid 1px;
+    margin-right: 1em;    
 }
 
 nav ul li {
     margin: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
 }
 /* Шапка с логотипом и меню КОНЕЦ */
 
@@ -78,21 +74,15 @@ nav ul li {
 /* 
     Основное содержимое
 */
-main {    
-    border: #000000 solid 1px;
+main {        
 }
 
 /* 
     Секция приветствия
 */
 #welcome-section {
-
-    height: 100vh;     
-    border: #000000 solid 1px;
-}
-
-#welcome-section div {
-    border: #000000 solid 1px;
+    height: 100vh;
+    padding: 0 1em;
 }
 
 h1 {
@@ -103,23 +93,29 @@ h1 {
 /* 
     Секция проектов
 */
+.projects {
+    padding: 0 1em;
+}
+
 #projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-#projects a {
-    margin-bottom: 3em;
+    margin-top: 1em;
 }
 
 .project-tile {
-    border: #000000 solid 1px;
+    margin-bottom: 3em;
+    text-decoration: none;
+    background: #cccccc;
+    color: #000000;
+}
+.project-tile p {
+    margin-bottom: 1em;
 }
 
 img {
-    width: 100%;
-    border: #000000 solid 1px;
+    width: 100%;    
 }
 /* Секция проектов КОНЕЦ */
 
@@ -127,22 +123,25 @@ img {
     Секция контакты
 */
 #profiles {
-    height: 50vh;    
-    background: #999999;
-    border: #000000 solid 1px;
+    min-height: 50vh;    
+    background: #999999;       
 }
 
-#profiles address {
+#profiles address {    
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 4em;
 }
 
 #profiles a {    
     padding: 1em;
+    margin-bottom: 1em;
     border: #000000 solid 1px;
-    border-radius: 1.5em;    
+    border-radius: 2em;        
 }
+
+
 /* Секция контакты КОНЕЦ */
 /* Основное содержимое КОНЕЦ */
 
@@ -154,6 +153,7 @@ footer {
     background: #000000;
     color: #ffffff
 }
+
 /* Подвал КОНЕЦ*/
 
 /* 
